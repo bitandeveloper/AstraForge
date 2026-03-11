@@ -1,0 +1,212 @@
+/* =========================
+   PREMIUM NAVBAR
+========================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 1.2rem 0;
+    z-index: 1000;
+    pointer-events: none;
+    /* Let clicks pass through padding area */
+}
+
+.nav-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(18, 18, 18, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 0.6rem 1.2rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    pointer-events: auto;
+    /* Enable clicks inside the nav pill */
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex: 1;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover .logo-img {
+    transform: scale(1.05);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--text-primary);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 15px;
+}
+
+.nav-right .cta {
+    padding: 0.6rem 1.5rem;
+    background: var(--accent);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-right .cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(77, 77, 255, 0.4);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    padding: 0.8rem 1.6rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.primary {
+    background: var(--accent);
+    color: white;
+}
+
+.secondary {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    margin-left: 1rem;
+}
+
+/* =========================
+   HAMBURGER
+========================= */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--glass-bg);
+        backdrop-filter: var(--glass-blur);
+        -webkit-backdrop-filter: var(--glass-blur);
+        border-bottom: 1px solid var(--glass-border);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 2rem 0;
+    background: var(--bg-secondary);
+    text-align: center;
+    margin-top: 4rem;
+    color: var(--text-secondary);
+}
+
+/* =========================
+   UTILITIES / STATE
+   ========================= */
+
+nav a.active {
+    color: var(--text-primary);
+}
+
+nav a.active::after {
+    width: 100%;
+}
+
+.glow-effect {
+    box-shadow: 0 0 15px rgba(47, 93, 255, 0.5);
+    border: 1px solid rgba(47, 93, 255, 0.8);
+}
+
+.glow-effect:hover {
+    box-shadow: 0 0 25px rgba(47, 93, 255, 0.8);
+    transform: translateY(-2px);
+}
