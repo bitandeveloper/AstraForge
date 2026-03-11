@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Astra Forge | Leadership</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <style>
+        /* Page-specific styles */
+        body {
+            overflow-x: hidden;
+            background: #0a0a0a;
+        }
+
+        .founders-hero {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            /* Allow content to dictate height on mobile, fit screen on desktop */
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .split {
+            flex: 1;
+            min-width: 300px;
+            /* Stack on mobile */
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 4rem 2rem;
+        }
+
+        /* Left Split (Founder 1) */
+        .split.left {
+            background: linear-gradient(135deg, #141414 0%, #0d121f 100%);
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Right Split (Founder 2) */
+        .split.right {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1c3a9e 150%);
+            /* Subtle blue influence */
+        }
+
+        .founder-content {
+            position: relative;
+            z-index: 10;
+            max-width: 480px;
+            text-align: left;
+            /* professional alignment */
+        }
+
+        .founder-avatar {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            object-fit: cover;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .role-tag {
+            display: inline-block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .founder-name {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
+
+        .founder-desc {
+            font-size: 1.05rem;
+            color: #b0b0b0;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .btn-works {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 28px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+
+        .btn-works:hover {
+            background: white;
+            color: #121212;
+            transform: translateY(-2px);
+        }
+
+        /* Philosophy Section */
+        .studio-philosophy {
+            background: #050505;
+            padding: 6rem 1rem;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        .philosophy-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .philosophy-title {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .philosophy-text {
+            font-size: 1.1rem;
+            color: #888;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .founders-hero {
+                flex-direction: column;
+            }
+
+            .split {
+                min-height: 50vh;
+                padding: 3rem 1.5rem;
+                text-align: center;
+            }
+
+            .founder-content {
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            .split.left {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="position: absolute; top: 20px; left: 20px; z-index: 100;">
+        <a href="about.html" class="btn"
+            style="background:transparent; border:1px solid #333; padding:8px 16px; font-size:0.85rem; color:#888;">&larr;
+            Return to Studio</a>
+    </div>
+
+    <div class="founders-hero">
+        <!-- Left Split: YoungGamingDJ -->
+        <div class="split left">
+            <div class="founder-content">
+                <img src="assets/images/studio/founder-1.jpg" alt="younggamingdj" class="founder-avatar">
+                <span class="role-tag">Creative Director</span>
+                <h1 class="founder-name">younggamingdj</h1>
+                <p class="founder-desc">
+                    Architecting the narrative backbone of Devlok. I bridge the gap between abstract creative vision and
+                    playable reality, ensuring every system serves the core player experience. My focus is on structural
+                    integrity within chaotic creativity.
+                </p>
+                <a href="https://modrinth.com/user/vwMAj3zn" target="_blank" class="btn-works">
+                    View Portfolio <span>&nearr;</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Split: Dark Yoddha -->
+        <div class="split right">
+            <div class="founder-content">
+                <img src="assets/images/studio/founder-2.jpg" alt="Dark Yoddha" class="founder-avatar">
+                <span class="role-tag">Lead Engineer</span>
+                <h1 class="founder-name">Dark Yoddha</h1>
+                <p class="founder-desc">
+                    Engineering the invisible foundations of immersion. I design robust backend architectures and
+                    scalable systems that allow complex digital worlds to breathe without hesitation. Performance is not
+                    a feature; it is the platform.
+                </p>
+                <a href="https://modrinth.com/user/6t8wPBIG" target="_blank" class="btn-works">
+                    Technical Works <span>&nearr;</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Combined Philosophy & CTA Section -->
+    <section class="studio-philosophy">
+        <div class="philosophy-content">
+            <h2 class="philosophy-title">The Astra Standard</h2>
+            <p class="philosophy-text">
+                We believe that true immersion comes from the seamless fusion of narrative depth and technical
+                excellence.
+                Astra Forge is not just a studio; it is a commitment to building digital experiences that respect the
+                player's intelligence and time.
+            </p>
+            <div class="cta-group">
+                <a href="contact.html" class="btn primary">Partner With Astra Forge</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/audio.js"></script>
+</body>
+
+</html>

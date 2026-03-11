@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Astra Forge | Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Astra Forge's portfolio of Roblox games, Minecraft plugins, and digital tools.">
+    <meta property="og:title" content="Astra Forge Projects">
+    <meta property="og:description" content="Innovation in action. See what we're building.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/studio/logo.png" alt="Astra Forge" class="logo-img">
+            </a>
+            <nav id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="devlok.html">Devlok</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+            </nav>
+            <div class="nav-right">
+                <a href="contact.html" class="cta">Contact</a>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="projects-hero fade-in">
+        <div class="container hero-content center-content">
+            <h1>Engineered Systems & <span style="color:var(--accent)">Digital Worlds</span></h1>
+            <p>From high-scale backend architectures to immersive gameplay loops.<br>A collection of our technical and
+                creative benchmarks.</p>
+        </div>
+    </section>
+
+    <!-- Flagship Showcase -->
+    <section class="featured-flagship fade-in">
+        <div class="container">
+            <div class="flagship-card">
+                <div class="flagship-image">
+                    <img src="assets/images/devlok/devlok-hero.jpg" alt="Devlok Engine" class="img-cover">
+                </div>
+                <div class="flagship-text">
+                    <span class="eyebrow">Flagship Experience</span>
+                    <h2>DEVLOK</h2>
+                    <p>A persistent open-world multiplayer RPG built on Roblox. Featuring a custom shard-less server
+                        architecture, procedural event generation, and a player-driven economy.</p>
+                    <div class="tech-stack">
+                        <span>Roblox Luau</span>
+                        <span>Custom Replication</span>
+                        <span>DataStore v2</span>
+                    </div>
+                    <a href="devlok.html" class="btn primary">View Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Grid with Filter -->
+    <section class="projects-section fade-in">
+        <div class="container">
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Systems</button>
+                <button class="filter-btn" data-filter="roblox">Roblox</button>
+                <button class="filter-btn" data-filter="minecraft">Minecraft</button>
+            </div>
+
+            <div class="project-grid" id="project-grid">
+                <!-- Roblox - Card 1 -->
+                <div class="project-card" data-category="roblox">
+                    <div class="card-image">
+                        <video src="assets/images/projects/Devlok.mp4" autoplay loop muted playsinline
+                            class="img-cover"></video>
+                    </div>
+                    <div class="card-content">
+                        <span class="project-tag">Roblox</span>
+                        <span class="project-tag" style="background: #f59e0b; margin-left: 0.5rem;">Coming Soon</span>
+                        <h3>Devlok</h3>
+                        <p>A persistent open-world multiplayer RPG with custom server architecture, procedural events,
+                            and player-driven economy. Our flagship experience.</p>
+                        <a href="devlok.html" class="text-link">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Minecraft - Card 2 -->
+                <div class="project-card" data-category="minecraft">
+                    <div class="card-image">
+                        <img src="assets/images/projects/modsync.png" alt="ModSync" class="img-cover">
+                    </div>
+                    <div class="card-content">
+                        <span class="project-tag">Minecraft Plugin</span>
+                        <h3>ModSync</h3>
+                        <p>Dual-component system enforcing fair play by verifying mods and resource packs, blocking
+                            banned content with transparent per-player audit logs.</p>
+                        <p style="font-size: 0.85rem; color: #888; margin-top: 0.5rem;">by Dark Yoddha</p>
+                        <a href="https://modrinth.com/project/WdL3t7jw" target="_blank" class="text-link">View on
+                            Modrinth →</a>
+                    </div>
+                </div>
+
+                <!-- Minecraft - Card 3 -->
+                <div class="project-card" data-category="minecraft">
+                    <div class="card-image">
+                        <img src="assets/images/projects/AntiAltGaurd.png" alt="AntiAltGuard" class="img-cover">
+                    </div>
+                    <div class="card-content">
+                        <span class="project-tag">Minecraft Plugin</span>
+                        <h3>AntiAltGuard</h3>
+                        <p>Shields servers from alt accounts and VPNs. Detects suspicious logins, blocks proxies, and
+                            protects lifesteal balance with smart identity management.</p>
+                        <p style="font-size: 0.85rem; color: #888; margin-top: 0.5rem;">by Dark Yoddha</p>
+                        <a href="https://modrinth.com/project/Xk1MKa1U" target="_blank" class="text-link">View on
+                            Modrinth →</a>
+                    </div>
+                </div>
+
+                <!-- Minecraft - Card 4 -->
+                <div class="project-card" data-category="minecraft">
+                    <div class="card-image">
+                        <img src="assets/images/projects/risers-modpack.png" alt="Risers Modpack" class="img-cover">
+                    </div>
+                    <div class="card-content">
+                        <span class="project-tag">Minecraft Modpack</span>
+                        <h3>Official Risers Modpack</h3>
+                        <p>Ultimate PvP & Crystal experience with essential mods for competitive play, optimized
+                            performance, and Feather Client-like features.</p>
+                        <p style="font-size: 0.85rem; color: #888; margin-top: 0.5rem;">by younggamingdj</p>
+                        <a href="https://modrinth.com/project/aFtA0fm0" target="_blank" class="text-link">View on
+                            Modrinth →</a>
+                    </div>
+                </div>
+
+                <!-- Minecraft - Card 5 -->
+                <div class="project-card" data-category="minecraft">
+                    <div class="card-image">
+                        <img src="assets/images/projects/riserstexturepack.png" alt="Risers Texture Pack"
+                            class="img-cover">
+                    </div>
+                    <div class="card-content">
+                        <span class="project-tag">Resource Pack</span>
+                        <h3>Risers Texture Pack</h3>
+                        <p>Custom SMP texture pack featuring unique elytras, armor naming system, custom weapons,
+                            animated items, and music discs.</p>
+                        <p style="font-size: 0.85rem; color: #888; margin-top: 0.5rem;">by younggamingdj</p>
+                        <a href="https://modrinth.com/project/Duv0KrZI" target="_blank" class="text-link">View on
+                            Modrinth →</a>
+                    </div>
+                </div>
+
+                <!-- Minecraft - Card 6 -->
+                <div class="project-card" data-category="minecraft">
+                    <div class="card-image">
+                        <video src="assets/images/projects/lifesteal-spigot.mp4" autoplay loop muted playsinline
+                            class="img-cover"></video>
+                    </div>
+                    <div class="card-content">
+                        <span class="project-tag">Minecraft Plugin</span>
+                        <h3>LifestealSpigot</h3>
+                        <p>Premium lifesteal plugin with tiered hearts, revive beacons, progressive crafting, beautiful
+                            GUIs, and SQLite storage for hardcore servers.</p>
+                        <p style="font-size: 0.85rem; color: #888; margin-top: 0.5rem;">by younggamingdj</p>
+                        <a href="https://modrinth.com/project/Td9Up8SC" target="_blank" class="text-link">View on
+                            Modrinth →</a>
+                    </div>
+                </div>
+
+                <!-- Minecraft - Card 7 -->
+                <div class="project-card" data-category="minecraft">
+                    <div class="card-image">
+                        <img src="assets/images/projects/supperbackpack.jpeg" alt="SupperBackpack" class="img-cover">
+                    </div>
+                    <div class="card-content">
+                        <span class="project-tag">Minecraft Plugin</span>
+                        <h3>SupperBackpack</h3>
+                        <p>Expandable inventory system with tiered backpacks, special ability gems (movement, combat,
+                            utility), and death protection mechanics.</p>
+                        <p style="font-size: 0.85rem; color: #888; margin-top: 0.5rem;">by younggamingdj</p>
+                        <a href="https://modrinth.com/project/hBTCoGAy" target="_blank" class="text-link">View on
+                            Modrinth →</a>
+                    </div>
+                </div>
+
+                <!-- Minecraft - Card 8 -->
+                <div class="project-card" data-category="minecraft">
+                    <div class="card-image">
+                        <img src="assets/images/projects/identitysteal.jpeg" alt="IdentitySteal" class="img-cover">
+                    </div>
+                    <div class="card-content">
+                        <span class="project-tag">Minecraft Plugin</span>
+                        <h3>IdentitySteal</h3>
+                        <p>Dynamic identity card system with 9 unique roles, XP progression, evolution tiers, stability
+                            mechanics, and role-based PvP interactions.</p>
+                        <p style="font-size: 0.85rem; color: #888; margin-top: 0.5rem;">by younggamingdj</p>
+                        <a href="https://modrinth.com/project/UQtVKhtB" target="_blank" class="text-link">View on
+                            Modrinth →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="mini-cta fade-in">
+        <div class="container center-content">
+            <h3>Need a Custom Solution?</h3>
+            <p>We engineer bespoke systems for studios and enterprise clients.</p>
+            <a href="contact.html" class="link-btn">Contact Engineering Team -></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Astra Forge. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/audio.js"></script>
+</body>
+
+</html>
